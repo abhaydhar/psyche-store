@@ -133,12 +133,8 @@ export default function CustomizerPage() {
           ctx.fillStyle = "#ffffff";
           ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
-          // Draw t-shirt shape filled with the selected color (improved round neck design)
-          const tshirtPath = new Path2D(`
-            M 65,35 L 40,45 L 25,75 L 45,82 L 48,65 L 48,235 L 152,235 L 152,65 L 155,82 L 175,75 L 160,45 L 135,35
-            C 130,38 125,42 120,45 Q 110,50 100,50 Q 90,50 80,45 C 75,42 70,38 65,35 Z
-            M 80,45 Q 90,52 100,52 Q 110,52 120,45 Q 115,40 110,37 Q 105,35 100,35 Q 95,35 90,37 Q 85,40 80,45 Z
-          `);
+          // Draw t-shirt shape filled with the selected color
+          const tshirtPath = new Path2D("M60,30 L30,50 L10,90 L40,100 L50,70 L50,190 L150,190 L150,70 L160,100 L190,90 L170,50 L140,30 L120,40 C110,50 90,50 80,40 Z");
           ctx.save();
           ctx.translate(CANVAS_WIDTH * 0.1, CANVAS_HEIGHT * 0.1);
           ctx.scale(CANVAS_WIDTH * 0.8 / 200, CANVAS_HEIGHT * 0.8 / 250);
