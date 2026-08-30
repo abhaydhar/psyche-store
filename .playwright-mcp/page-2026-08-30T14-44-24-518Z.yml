@@ -1,0 +1,513 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e6]:
+      - link "śyāma paṭṭaḥ श्यामपट्टः" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e14]:
+          - generic [ref=e15]: śyāma paṭṭaḥ
+          - generic [ref=e16]: श्यामपट्टः
+      - navigation [ref=e17]:
+        - button "Features" [ref=e19] [cursor=pointer]
+        - button "Resources" [ref=e23] [cursor=pointer]
+        - button "Advanced - Coming Soon" [ref=e27] [cursor=pointer]
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - text: AI-Powered Question Generation for Indian Schools
+          - generic [ref=e39]: FREE
+        - heading "Create Homework Sheets in Seconds, Not Hours" [level=1] [ref=e40]: Create Homework Sheetsin Seconds, Not Hours
+        - paragraph [ref=e41]: Generate customized Math and Science question papers aligned to CBSE and ICSE curriculum. Perfect for parents and teachers helping young learners in Grades 1-5.
+        - generic [ref=e42]:
+          - link [ref=e43] [cursor=pointer]:
+            - /url: /generate
+            - button "Create Question Sheet" [ref=e44]
+          - button "Watch Demo" [ref=e47] [cursor=pointer]
+        - generic [ref=e50]:
+          - generic [ref=e51]: No signup required
+          - generic [ref=e56]: 100% Free
+          - generic [ref=e61]: Instant PDF download
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]: New Feature!
+          - heading "Interactive Quiz Challenge" [level=2] [ref=e78]
+          - paragraph [ref=e79]: Test your knowledge with our curated quizzes! Compete with students across India, climb the leaderboard, and track your progress.
+          - generic [ref=e80]:
+            - generic [ref=e81]: Instant feedback
+            - generic [ref=e86]: Compete with others
+            - generic [ref=e93]: Leaderboard rankings
+          - link [ref=e101] [cursor=pointer]:
+            - /url: /quiz
+            - button "Start Quiz Challenge" [ref=e102]
+        - generic [ref=e107]: FREE
+    - generic [ref=e118]:
+      - generic [ref=e119]:
+        - heading "Everything You Need, Nothing You Don't" [level=2] [ref=e120]
+        - paragraph [ref=e121]: Simple, focused, and incredibly effective. Just pick your options and get perfect question sheets.
+      - generic [ref=e122]:
+        - generic [ref=e124]:
+          - heading "Mathematics" [level=3] [ref=e128]
+          - paragraph [ref=e129]: Addition, subtraction, multiplication, division, shapes, patterns, time, money, and more—perfectly calibrated for each grade.
+          - generic [ref=e130]:
+            - generic [ref=e131]: Numbers
+            - generic [ref=e132]: Geometry
+            - generic [ref=e133]: Patterns
+        - generic [ref=e135]:
+          - heading "Science (EVS)" [level=3] [ref=e139]
+          - paragraph [ref=e140]: Plants, animals, human body, environment, seasons—curiosity-sparking questions that make learning exciting.
+          - generic [ref=e141]:
+            - generic [ref=e142]: Living Things
+            - generic [ref=e143]: Body
+            - generic [ref=e144]: Nature
+        - generic [ref=e146]:
+          - heading "Curriculum Aligned" [level=3] [ref=e151]
+          - paragraph [ref=e152]: Questions precisely mapped to ICSE and CBSE syllabi for grades 1-5. No random questions—only what your child actually studies.
+          - generic [ref=e153]:
+            - generic [ref=e154]: CBSE
+            - generic [ref=e155]: ICSE
+            - generic [ref=e156]: Grades 1-5
+    - generic [ref=e157]:
+      - heading "Three Steps. Two Minutes. Unlimited Questions." [level=2] [ref=e158]
+      - paragraph [ref=e159]: No complicated setup. No learning curve. Just pick, click, and print.
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - generic [ref=e162]: "1"
+          - heading "Choose Subject" [level=3] [ref=e163]
+          - paragraph [ref=e164]: Pick Math or Science based on what your child needs to practice
+        - generic [ref=e169]:
+          - generic [ref=e170]: "2"
+          - heading "Set Preferences" [level=3] [ref=e171]
+          - paragraph [ref=e172]: Select grade, board (CBSE/ICSE), topic, and number of questions
+        - generic [ref=e177]:
+          - generic [ref=e178]: "3"
+          - heading "Generate & Print" [level=3] [ref=e179]
+          - paragraph [ref=e180]: Download a beautiful PDF or print directly—ready in seconds
+      - link [ref=e182] [cursor=pointer]:
+        - /url: /generate
+        - button "Start Generating Now" [ref=e183]
+    - generic [ref=e187]:
+      - generic [ref=e188]:
+        - generic [ref=e189]: We Understand Your Struggles
+        - heading "Real Problems. Real Solutions." [level=2] [ref=e192]
+        - paragraph [ref=e193]: We've talked to hundreds of parents and teachers. Here are the challenges they face—and exactly how śyāma paṭṭaḥ solves them.
+      - generic [ref=e194]:
+        - button "Everyone" [ref=e195] [cursor=pointer]
+        - button "For Children" [ref=e201] [cursor=pointer]
+        - button "For Parents" [ref=e205] [cursor=pointer]
+      - generic [ref=e208]:
+        - generic [ref=e210]:
+          - generic [ref=e212]:
+            - generic [ref=e213]: 😫
+            - generic [ref=e214]:
+              - generic [ref=e215]: The Problem
+              - heading "Boring, Repetitive Practice" [level=3] [ref=e221]
+              - paragraph [ref=e222]: Same questions from dog-eared workbooks kill curiosity. Children learn to hate studying because it feels like punishment.
+          - generic [ref=e228]:
+            - generic [ref=e229]: śyāma paṭṭaḥ Solution
+            - heading "Fresh Challenges Every Time" [level=3] [ref=e234]
+            - paragraph [ref=e235]: AI generates unique questions each session. Every practice feels like a new adventure, keeping young minds engaged and curious.
+          - generic [ref=e236]: For Children
+        - generic [ref=e242]:
+          - generic [ref=e244]:
+            - generic [ref=e245]: 😰
+            - generic [ref=e246]:
+              - generic [ref=e247]: The Problem
+              - heading "Questions Too Hard or Too Easy" [level=3] [ref=e253]
+              - paragraph [ref=e254]: Mismatched difficulty damages confidence. Too easy = boredom. Too hard = frustration and tears.
+          - generic [ref=e260]:
+            - generic [ref=e261]: śyāma paṭṭaḥ Solution
+            - heading "Perfectly Calibrated Difficulty" [level=3] [ref=e266]
+            - paragraph [ref=e267]: Grade and board-aligned questions hit the sweet spot. Children feel challenged but not overwhelmed—the zone where real learning happens.
+          - generic [ref=e268]: For Children
+        - generic [ref=e274]:
+          - generic [ref=e276]:
+            - generic [ref=e277]: ⏰
+            - generic [ref=e278]:
+              - generic [ref=e279]: The Problem
+              - heading "No Time, Too Much Guilt" [level=3] [ref=e285]
+              - paragraph [ref=e286]: Working parents feel guilty about not having time to create quality study materials. The mental load is exhausting.
+          - generic [ref=e292]:
+            - generic [ref=e293]: śyāma paṭṭaḥ Solution
+            - heading "2-Minute Question Generation" [level=3] [ref=e298]
+            - paragraph [ref=e299]: Three clicks, 2 minutes, done. Generate a full question sheet while waiting for chai to brew. Guilt-free parenting!
+          - generic [ref=e300]: For Parents
+        - generic [ref=e305]:
+          - generic [ref=e307]:
+            - generic [ref=e308]: 🤷
+            - generic [ref=e309]:
+              - generic [ref=e310]: The Problem
+              - heading "What Should I Even Ask?" [level=3] [ref=e316]
+              - paragraph [ref=e317]: Parents don't know what's age-appropriate or curriculum-aligned. Fear of teaching wrong concepts or creating confusion.
+          - generic [ref=e323]:
+            - generic [ref=e324]: śyāma paṭṭaḥ Solution
+            - heading "Expert-Level Questions, Zero Expertise" [level=3] [ref=e329]
+            - paragraph [ref=e330]: śyāma paṭṭaḥ knows the ICSE and CBSE syllabus inside out. Just select the board and grade—we handle the pedagogy.
+          - generic [ref=e331]: For Parents
+        - generic [ref=e336]:
+          - generic [ref=e338]:
+            - generic [ref=e339]: 💸
+            - generic [ref=e340]:
+              - generic [ref=e341]: The Problem
+              - heading "Expensive Workbooks, Limited Use" [level=3] [ref=e347]
+              - paragraph [ref=e348]: ₹200-500 per workbook, one-time use, outdated quickly. Children flip through them once and they're done.
+          - generic [ref=e354]:
+            - generic [ref=e355]: śyāma paṭṭaḥ Solution
+            - heading "Unlimited Questions, Zero Cost" [level=3] [ref=e360]
+            - paragraph [ref=e361]: Generate infinite practice sheets for free. Better for wallets, better for trees. Print only what you need.
+          - generic [ref=e362]: For Everyone
+        - generic [ref=e370]:
+          - generic [ref=e372]:
+            - generic [ref=e373]: 🎯
+            - generic [ref=e374]:
+              - generic [ref=e375]: The Problem
+              - heading "Generic, One-Size-Fits-All" [level=3] [ref=e381]
+              - paragraph [ref=e382]: Workbooks can't adapt. If a child struggles with fractions, they can't get extra fraction practice on demand.
+          - generic [ref=e388]:
+            - generic [ref=e389]: śyāma paṭṭaḥ Solution
+            - heading "Laser-Focused Topic Practice" [level=3] [ref=e394]
+            - paragraph [ref=e395]: Weak in shapes? Generate 30 shape questions. Struggling with plants? Here are 25 EVS questions. Targeted practice, faster improvement.
+          - generic [ref=e396]: For Everyone
+      - generic [ref=e405]:
+        - generic [ref=e406]:
+          - heading "Why Choose śyāma paṭṭaḥ?" [level=3] [ref=e407]
+          - paragraph [ref=e408]: Built specifically for Indian education, by people who understand it
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - generic [ref=e411]: 🧠
+            - heading "AI That Understands Indian Education" [level=4] [ref=e412]
+            - paragraph [ref=e413]: Not just generic AI—trained on CBSE and ICSE patterns. Questions feel like they're from actual teachers.
+          - generic [ref=e414]:
+            - generic [ref=e415]: 🖨️
+            - heading "Print-Ready PDFs in Seconds" [level=4] [ref=e416]
+            - paragraph [ref=e417]: Beautiful, professionally formatted question sheets. Just print and practice—no formatting hassles.
+          - generic [ref=e418]:
+            - generic [ref=e419]: 📈
+            - heading "Grades 1-5 Coverage" [level=4] [ref=e420]
+            - paragraph [ref=e421]: From counting apples to long division, from body parts to ecosystems. Growing with your child.
+          - generic [ref=e422]:
+            - generic [ref=e423]: 🔬
+            - heading "Math + Science, One Platform" [level=4] [ref=e424]
+            - paragraph [ref=e425]: Numbers and nature, calculation and curiosity—both subjects mastered under one roof.
+        - link [ref=e427] [cursor=pointer]:
+          - /url: /generate
+          - button "Try It Free Now" [ref=e428]
+      - generic [ref=e431]:
+        - generic [ref=e432]:
+          - generic [ref=e433]: 10,000+
+          - generic [ref=e434]: Question Sheets Generated
+        - generic [ref=e435]:
+          - generic [ref=e436]: 500+
+          - generic [ref=e437]: Happy Families
+        - generic [ref=e438]:
+          - generic [ref=e439]: 50+
+          - generic [ref=e440]: Topics Covered
+        - generic [ref=e441]:
+          - generic [ref=e442]: 100%
+          - generic [ref=e443]: Free to Use
+    - generic [ref=e445]:
+      - generic [ref=e446]:
+        - generic [ref=e447]: Real Stories from Real Parents & Teachers
+        - heading "Join Thousands of Happy Families" [level=2] [ref=e451]
+        - paragraph [ref=e452]: See how parents, teachers, and educators across India are transforming homework time with śyāma paṭṭaḥ
+      - generic [ref=e453]:
+        - generic [ref=e455]:
+          - generic [ref=e456]:
+            - generic [ref=e457]:
+              - generic [ref=e458]: 👩‍💼
+              - text: The Working Parent
+            - heading "No More 11 PM Homework Panic" [level=3] [ref=e459]
+            - generic [ref=e460]:
+              - generic [ref=e461]:
+                - generic [ref=e462]: The Problem
+                - paragraph [ref=e463]: Creating meaningful practice questions after a long workday feels impossible. Google searches return random worksheets that don't match the ICSE syllabus.
+              - generic [ref=e464]:
+                - generic [ref=e465]: The Solution
+                - paragraph [ref=e466]: With śyāma paṭṭaḥ, Priya generates 20 curriculum-aligned questions in 2 minutes while dinner heats up.
+          - generic [ref=e470]:
+            - generic [ref=e475]:
+              - generic [ref=e476]: 👩‍💼
+              - text: The Working Parent
+            - heading "No More 11 PM Homework Panic" [level=3] [ref=e477]
+            - blockquote [ref=e478]: "\"I went from dreading homework time to actually enjoying it with my daughter. The questions match exactly what her teacher covers!\""
+            - generic [ref=e479]:
+              - generic [ref=e480]: PS
+              - generic [ref=e481]:
+                - generic [ref=e482]: Priya Sharma
+                - generic [ref=e483]: Mumbai, Maharashtra
+        - button [ref=e498] [cursor=pointer]
+        - button [ref=e501] [cursor=pointer]
+      - generic [ref=e504]:
+        - button "Go to slide 1" [ref=e505] [cursor=pointer]
+        - button "Go to slide 2" [ref=e506] [cursor=pointer]
+        - button "Go to slide 3" [ref=e507] [cursor=pointer]
+        - button "Go to slide 4" [ref=e508] [cursor=pointer]
+        - button "Go to slide 5" [ref=e509] [cursor=pointer]
+        - button "Go to slide 6" [ref=e510] [cursor=pointer]
+        - button "Go to slide 7" [ref=e511] [cursor=pointer]
+        - button "Go to slide 8" [ref=e512] [cursor=pointer]
+        - button "Go to slide 9" [ref=e513] [cursor=pointer]
+        - button "Go to slide 10" [ref=e514] [cursor=pointer]
+      - generic [ref=e515]:
+        - button "👩‍💼 The Working Parent" [ref=e516] [cursor=pointer]:
+          - generic [ref=e517]: 👩‍💼
+          - generic [ref=e518]: The Working Parent
+        - button "🏠 The Homeschooling Parent" [ref=e519] [cursor=pointer]:
+          - generic [ref=e520]: 🏠
+          - generic [ref=e521]: The Homeschooling Parent
+        - button "👩‍🏫 The Primary School Teacher" [ref=e522] [cursor=pointer]:
+          - generic [ref=e523]: 👩‍🏫
+          - generic [ref=e524]: The Primary School Teacher
+        - button "😰 The Anxious First-Time Parent" [ref=e525] [cursor=pointer]:
+          - generic [ref=e526]: 😰
+          - generic [ref=e527]: The Anxious First-Time Parent
+        - button "👴 The Grandparent Caregiver" [ref=e528] [cursor=pointer]:
+          - generic [ref=e529]: 👴
+          - generic [ref=e530]: The Grandparent Caregiver
+    - generic [ref=e532]:
+      - generic [ref=e533]:
+        - heading "What is śyāma paṭṭaḥ?" [level=2] [ref=e534]
+        - paragraph [ref=e535]: Understanding our platform and key concepts
+      - generic [ref=e536]:
+        - generic [ref=e538]:
+          - heading "Platform Definition" [level=3] [ref=e539]
+          - paragraph [ref=e540]:
+            - strong [ref=e541]: śyāma paṭṭaḥ
+            - text: is a free, AI-powered homework question generator specifically designed for Indian primary school students. The platform creates curriculum-aligned question sheets for Mathematics and Science (EVS) subjects, supporting CBSE and ICSE boards for Grades 1-5.
+          - paragraph [ref=e542]: The name "śyāma paṭṭaḥ" (pronounced shyama-pattah) is Sanskrit for "blackboard," symbolizing our commitment to making quality education accessible to all Indian students.
+        - generic [ref=e543]:
+          - generic [ref=e545]:
+            - heading "CBSE" [level=4] [ref=e546]
+            - paragraph [ref=e547]:
+              - strong [ref=e548]: Central Board of Secondary Education
+              - text: "- India's national educational board operating under the Ministry of Education. CBSE follows the National Curriculum Framework (NCF) and is the largest education board in India with over 21,000 affiliated schools."
+          - generic [ref=e550]:
+            - heading "ICSE" [level=4] [ref=e551]
+            - paragraph [ref=e552]:
+              - strong [ref=e553]: Indian Certificate of Secondary Education
+              - text: "- A private, non-governmental board of education in India. ICSE curriculum emphasizes a more detailed and comprehensive approach to English language and literature, with approximately 2,300 affiliated schools."
+          - generic [ref=e555]:
+            - heading "EVS" [level=4] [ref=e556]
+            - paragraph [ref=e557]:
+              - strong [ref=e558]: Environmental Studies
+              - text: "- An integrated subject for primary classes (1-5) that combines Science, Social Science, and Environmental Education. Covers topics like plants, animals, human body, seasons, and our environment."
+          - generic [ref=e560]:
+            - heading "AI-Powered Generation" [level=4] [ref=e561]
+            - paragraph [ref=e562]:
+              - text: Using advanced
+              - strong [ref=e563]: Artificial Intelligence
+              - text: and natural language processing to create unique, curriculum-appropriate questions. Each generation produces fresh questions while maintaining educational quality and difficulty standards.
+    - generic [ref=e565]:
+      - generic [ref=e566]:
+        - heading "By the Numbers" [level=2] [ref=e567]
+        - paragraph [ref=e568]: Real statistics about Indian primary education and our platform
+      - generic [ref=e569]:
+        - generic [ref=e571]:
+          - generic [ref=e572]: 190M+
+          - generic [ref=e573]: Primary Students
+          - paragraph [ref=e574]: "Students enrolled in Grades 1-5 across India (Source: UDISE+ 2022-23)"
+        - generic [ref=e576]:
+          - generic [ref=e577]: 21,000+
+          - generic [ref=e578]: CBSE Schools
+          - paragraph [ref=e579]: "CBSE-affiliated schools across India and abroad (Source: CBSE Official 2024)"
+        - generic [ref=e581]:
+          - generic [ref=e582]: 2-3min
+          - generic [ref=e583]: Generation Time
+          - paragraph [ref=e584]: Average time to generate a complete question sheet on our platform
+      - generic [ref=e586]:
+        - heading "Platform Capabilities" [level=3] [ref=e587]
+        - generic [ref=e588]:
+          - generic [ref=e589]:
+            - generic [ref=e590]: 50+
+            - generic [ref=e591]: Topics Covered
+            - generic [ref=e592]: Across Math & Science
+          - generic [ref=e593]:
+            - generic [ref=e594]: 100%
+            - generic [ref=e595]: Curriculum Aligned
+            - generic [ref=e596]: CBSE & ICSE Standards
+          - generic [ref=e597]:
+            - generic [ref=e598]: Free
+            - generic [ref=e599]: Forever
+            - generic [ref=e600]: No hidden costs
+          - generic [ref=e601]:
+            - generic [ref=e602]: ∞
+            - generic [ref=e603]: Unlimited
+            - generic [ref=e604]: Generate anytime
+      - paragraph [ref=e606]:
+        - strong [ref=e607]: "Sources:"
+        - text: Unified District Information System for Education Plus (UDISE+) 2022-23 Report, CBSE Official Statistics 2024, National Education Policy 2020
+    - generic [ref=e609]:
+      - generic [ref=e610]:
+        - heading "Real-World Examples" [level=2] [ref=e611]
+        - paragraph [ref=e612]: See how parents, teachers, and students use śyāma paṭṭaḥ
+      - generic [ref=e613]:
+        - generic [ref=e615]:
+          - generic [ref=e616]:
+            - generic [ref=e617]: "USE CASE #1"
+            - heading "Working Parent" [level=3] [ref=e618]
+            - paragraph [ref=e619]: Mumbai, Maharashtra
+          - generic [ref=e620]:
+            - paragraph [ref=e621]: "\"My son struggles with multiplication tables. I generated 5 different worksheets over the week.\""
+            - generic [ref=e622]:
+              - paragraph [ref=e623]:
+                - strong [ref=e624]: "Challenge:"
+                - text: Grade 3 student weak in multiplication (2-10 tables)
+              - paragraph [ref=e625]:
+                - strong [ref=e626]: "Solution:"
+                - text: Generated 5 worksheets with 20 questions each, increasing difficulty
+              - paragraph [ref=e627]:
+                - strong [ref=e628]: "Results:"
+                - text: After 2 weeks of daily practice (15 minutes), improved from 40% to 85% accuracy
+              - paragraph [ref=e629]:
+                - strong [ref=e630]: "Time Saved:"
+                - text: Would have spent ₹500 on workbooks + 3 hours creating questions manually
+        - generic [ref=e632]:
+          - generic [ref=e633]:
+            - generic [ref=e634]: "USE CASE #2"
+            - heading "Primary Teacher" [level=3] [ref=e635]
+            - paragraph [ref=e636]: Bangalore, Karnataka
+          - generic [ref=e637]:
+            - paragraph [ref=e638]: "\"I teach 3 sections of Grade 4. Creating different question papers for each section used to take hours.\""
+            - generic [ref=e639]:
+              - paragraph [ref=e640]:
+                - strong [ref=e641]: "Challenge:"
+                - text: Needed 3 different test papers for 120 students (40 per section)
+              - paragraph [ref=e642]:
+                - strong [ref=e643]: "Solution:"
+                - text: Generated 3 unique 30-question tests in under 10 minutes
+              - paragraph [ref=e644]:
+                - strong [ref=e645]: "Results:"
+                - text: Reduced test prep time from 5 hours to 15 minutes per week
+              - paragraph [ref=e646]:
+                - strong [ref=e647]: "Additional Benefit:"
+                - text: Students can't copy since each section has different questions
+        - generic [ref=e649]:
+          - generic [ref=e650]:
+            - generic [ref=e651]: "USE CASE #3"
+            - heading "Homeschooling Family" [level=3] [ref=e652]
+            - paragraph [ref=e653]: Delhi NCR
+          - generic [ref=e654]:
+            - paragraph [ref=e655]: "\"We homeschool our twins (Grade 2). Finding age-appropriate worksheets was challenging and expensive.\""
+            - generic [ref=e656]:
+              - paragraph [ref=e657]:
+                - strong [ref=e658]: "Challenge:"
+                - text: Needed varied practice material following CBSE curriculum for 2 children
+              - paragraph [ref=e659]:
+                - strong [ref=e660]: "Solution:"
+                - text: Generate fresh worksheets daily for both Math and Science
+              - paragraph [ref=e661]:
+                - strong [ref=e662]: "Results:"
+                - text: Saved ₹15,000/year on workbooks and printed materials
+              - paragraph [ref=e663]:
+                - strong [ref=e664]: "Favorite Feature:"
+                - text: Ability to focus on specific weak areas (e.g., only subtraction with borrowing)
+      - generic [ref=e666]:
+        - 'heading "Step-by-Step: Generate Your First Worksheet" [level=3] [ref=e667]'
+        - generic [ref=e668]:
+          - generic [ref=e669]:
+            - generic [ref=e670]: "1"
+            - generic [ref=e671]:
+              - heading "Visit Homepage" [level=4] [ref=e672]
+              - paragraph [ref=e673]: Navigate to homework-qna.vercel.app and click "Create Question Sheet"
+          - generic [ref=e674]:
+            - generic [ref=e675]: "2"
+            - generic [ref=e676]:
+              - heading "Select Subject & Grade" [level=4] [ref=e677]
+              - paragraph [ref=e678]: Choose Math or Science, then select your grade (1-5) and board (CBSE/ICSE)
+          - generic [ref=e679]:
+            - generic [ref=e680]: "3"
+            - generic [ref=e681]:
+              - heading "Pick Topic & Question Count" [level=4] [ref=e682]
+              - paragraph [ref=e683]: Select specific topic (e.g., "Addition" or "Plants") and choose 10-30 questions
+          - generic [ref=e684]:
+            - generic [ref=e685]: "4"
+            - generic [ref=e686]:
+              - heading "Generate & Download" [level=4] [ref=e687]
+              - paragraph [ref=e688]: Click "Generate Questions" button, wait 2-3 minutes, then download your print-ready PDF
+          - generic [ref=e689]:
+            - generic [ref=e690]: ✓
+            - generic [ref=e691]:
+              - heading "Done!" [level=4] [ref=e692]
+              - paragraph [ref=e693]: Print the PDF or use it digitally. Come back anytime to generate more!
+    - generic [ref=e697]:
+      - generic [ref=e698]:
+        - heading "Key Takeaways" [level=2] [ref=e703]
+        - paragraph [ref=e704]: Everything you need to know about śyāma paṭṭaḥ
+      - generic [ref=e705]:
+        - generic [ref=e710]:
+          - heading "100% Free & Always Will Be" [level=3] [ref=e711]
+          - paragraph [ref=e712]: Generate unlimited question sheets for Math and Science. No signup required, no hidden costs, no credit card needed. Our mission is to make quality education accessible to every Indian family.
+        - generic [ref=e717]:
+          - heading "Curriculum-Aligned for CBSE & ICSE" [level=3] [ref=e718]
+          - paragraph [ref=e719]: Every question is mapped to official CBSE and ICSE syllabi for Grades 1-5. Our AI ensures age-appropriate vocabulary, difficulty levels, and topic coverage that matches what students learn in school.
+        - generic [ref=e724]:
+          - heading "Fresh Questions Every Time" [level=3] [ref=e725]
+          - paragraph [ref=e726]: Unlike static workbooks, our AI generates unique questions each time. Practice the same topic 10 times and get 10 completely different question sets. Perfect for daily practice, test prep, and reinforcing weak areas.
+        - generic [ref=e731]:
+          - heading "Ready in 2-3 Minutes" [level=3] [ref=e732]
+          - paragraph [ref=e733]: From clicking "Generate" to downloading your print-ready PDF takes less than 3 minutes. No manual question creation, no formatting headaches—just instant, professional worksheets.
+        - generic [ref=e738]:
+          - heading "Perfect for Parents, Teachers & Homeschoolers" [level=3] [ref=e739]
+          - paragraph [ref=e740]: Whether you're a working parent helping with homework, a teacher creating tests for 3 sections, or a homeschooling family—our platform adapts to your needs. Focus on specific weak topics, generate different versions, or create comprehensive practice sets.
+      - generic [ref=e741]:
+        - paragraph [ref=e742]: In conclusion, śyāma paṭṭaḥ transforms hours of homework preparation into minutes, providing unlimited, curriculum-aligned practice material for free. Join thousands of Indian families who have discovered the easiest way to support their children's education.
+        - link [ref=e743] [cursor=pointer]:
+          - /url: /generate
+          - button "Start Generating Questions Now" [ref=e744]
+    - generic [ref=e748]:
+      - heading "Ready to Transform Homework Time?" [level=2] [ref=e749]
+      - paragraph [ref=e750]: Join thousands of parents and teachers who've discovered the easiest way to create curriculum-aligned practice sheets. It's free, it's instant, and it works.
+      - link [ref=e751] [cursor=pointer]:
+        - /url: /generate
+        - button "Create Your First Question Sheet" [ref=e752]
+      - paragraph [ref=e755]: No signup • No credit card • Free forever
+    - generic [ref=e759]:
+      - heading "Stay Updated with New Features" [level=3] [ref=e764]
+      - paragraph [ref=e765]: Get notified about new question types, curriculum updates, and teaching tips. No spam, unsubscribe anytime.
+      - generic [ref=e766]:
+        - textbox "Enter your email" [ref=e771]
+        - button "Subscribe" [ref=e772] [cursor=pointer]
+      - generic [ref=e775]:
+        - generic [ref=e776]: No spam
+        - generic [ref=e780]: Unsubscribe anytime
+        - generic [ref=e784]: Free forever
+    - generic [ref=e794]:
+      - generic [ref=e795]:
+        - generic [ref=e796]:
+          - generic [ref=e797]: श्यामपट्टःśyāma paṭṭaḥ
+          - paragraph [ref=e802]: AI-powered homework question generator for Indian schools. Making education accessible, one question at a time.
+        - generic [ref=e803]:
+          - heading "Product" [level=4] [ref=e804]
+          - list [ref=e805]:
+            - listitem [ref=e806]:
+              - link "Generate Questions" [ref=e807] [cursor=pointer]:
+                - /url: /generate
+            - listitem [ref=e808]:
+              - link "Features" [ref=e809] [cursor=pointer]:
+                - /url: /features
+            - listitem [ref=e810]:
+              - link "Blog" [ref=e811] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e812]:
+              - link "FAQ" [ref=e813] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e814]:
+          - heading "Connect" [level=4] [ref=e815]
+          - list [ref=e816]:
+            - listitem [ref=e817]:
+              - link "About Us" [ref=e818] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e819]:
+              - link "Contact" [ref=e820] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e821]:
+              - link "Success Stories" [ref=e822] [cursor=pointer]:
+                - /url: /stories
+      - generic [ref=e823]:
+        - generic [ref=e825]:
+          - link "Terms of Service" [ref=e826] [cursor=pointer]:
+            - /url: /terms
+          - generic [ref=e827]: •
+          - link "Privacy Policy" [ref=e828] [cursor=pointer]:
+            - /url: /privacy
+        - paragraph [ref=e829]: © 2026 śyāma paṭṭaḥ. All rights reserved.
+        - paragraph [ref=e830]: Made with ❤️ for young learners in India. Questions generated using AI—always review before use.
+  - alert [ref=e833]

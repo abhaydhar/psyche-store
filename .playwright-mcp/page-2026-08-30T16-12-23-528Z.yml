@@ -1,0 +1,13 @@
+- generic [active] [ref=f9e1]:
+  - region "Notifications alt+T"
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - generic [ref=f9e8]:
+        - heading "PsycheStore" [level=1] [ref=f9e9]
+        - paragraph [ref=f9e10]: Custom T-Shirt Studio
+      - tablist [ref=f9e12]:
+        - tab "Adults" [selected] [ref=f9e13]
+        - tab "Kids" [ref=f9e14]
+  - main [ref=f9e15]:
+    - paragraph [ref=f9e19]: Loading products...
+  - button "Open Next.js Dev Tools" [ref=f9e25] [cursor=pointer]

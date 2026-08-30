@@ -29,8 +29,55 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is configured for deployment on multiple free hosting platforms:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Quick Start (2 minutes)
+```bash
+# Check if you're ready to deploy
+npm run deploy:check
+
+# Deploy to your chosen platform
+npm run deploy:vercel   # Vercel (Recommended)
+npm run deploy:railway  # Railway
+npm run deploy:netlify  # Netlify
+```
+
+### Deployment Options
+
+1. **[Vercel](https://vercel.com)** ⭐ Recommended
+   - Best for Next.js apps
+   - Unlimited free personal projects
+   - Automatic deployments on git push
+   - [Quick Start Guide](./DEPLOYMENT_QUICKSTART.md)
+
+2. **[Railway](https://railway.app)**
+   - $5/month free credit
+   - Great for full-stack apps
+   - Built-in database options
+
+3. **[Netlify](https://netlify.com)**
+   - 100GB bandwidth free
+   - Excellent form handling
+   - Serverless functions
+
+4. **[Render](https://render.com)**
+   - No credit card required
+   - 750 hours/month free
+   - Auto SSL certificates
+
+### 📚 Documentation
+
+- **[Quick Start Guide](./DEPLOYMENT_QUICKSTART.md)** - Deploy in 5 minutes
+- **[Full Deployment Guide](./DEPLOYMENT.md)** - Detailed instructions for all platforms
+- **[Environment Variables](./env.example)** - Required configuration
+
+### Environment Setup
+
+1. Copy `.env.example` to `.env`
+2. Fill in your Supabase credentials
+3. Add other required environment variables
+4. Set the same variables on your deployment platform
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).

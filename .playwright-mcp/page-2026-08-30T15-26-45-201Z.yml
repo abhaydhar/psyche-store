@@ -1,0 +1,50 @@
+- generic [ref=e1]:
+  - region "Notifications alt+T"
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading [level=1] [ref=e82]: PsycheStore
+      - tablist [ref=e9]:
+        - tab [selected] [ref=e83]: Adults
+        - tab [ref=e84]: Kids
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e68]:
+        - button [ref=e85]: Rotate 15°
+        - generic [ref=e73]: Drag and resize your design within the print area
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - text: Color
+          - generic [ref=e34]:
+            - button [ref=e86]
+            - button [ref=e87]
+            - button [ref=e88]
+          - paragraph [ref=e40]: Black
+        - generic [ref=e41]:
+          - text: Size
+          - generic [ref=e42]:
+            - button [ref=e89]: S
+            - button [ref=e90]: M
+            - button [ref=e91]: L
+            - button [ref=e92]: XL
+            - button [ref=e93]: XXL
+        - generic [ref=e48]:
+          - text: Your Design
+          - generic [ref=e74]:
+            - generic [ref=e79]: test-design.png
+            - button [ref=e80]
+        - button [ref=e94]: Save & Order
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: "Category: Adults"
+          - paragraph [ref=e52]: "Color: Black"
+          - paragraph [ref=e56]: "Size: L"
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]
+  - alert [ref=e25]
+  - dialog [ref=e98]:
+    - generic [ref=e99]:
+      - heading "Complete Payment" [level=2] [ref=e100]
+      - paragraph [ref=e101]: Scan the QR code below to make payment
+    - generic [ref=e102]:
+      - generic [ref=e103]: Adults • Black • Size L
+      - img "Payment QR Code" [ref=e105]
+      - button "Continue" [active] [ref=e106]
+    - button "Close" [ref=e107]

@@ -1,0 +1,46 @@
+- generic [ref=e1]:
+  - region "Notifications alt+T"
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e8]:
+        - heading "PsycheStore" [level=1] [ref=e9]
+        - paragraph [ref=e10]: Custom T-Shirt Studio
+      - tablist [ref=e12]:
+        - tab "Adults" [selected] [ref=e13]
+        - tab "Kids" [ref=e14]
+  - main [ref=e15]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - heading "Customize Your Design" [level=2] [ref=e37]
+        - paragraph [ref=e38]: Choose your color, size, and upload your design to create something unique.
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - text: Color
+          - generic [ref=e41]:
+            - button "Black" [ref=e42]
+            - button "White" [ref=e45]
+            - button "Navy" [ref=e46]
+          - paragraph [ref=e47]: Black
+        - generic [ref=e48]:
+          - text: Size
+          - generic [ref=e49]:
+            - button "S" [ref=e50]
+            - button "M" [ref=e51]
+            - button "L" [active] [ref=e52]
+            - button "XL" [ref=e53]
+            - button "XXL" [ref=e54]
+        - generic [ref=e55]:
+          - text: Your Design
+          - button "Upload Design (PNG/JPEG)" [ref=e56]
+      - button "Continue to Checkout" [disabled]
+      - generic [ref=e57]:
+        - heading "Order Summary" [level=6] [ref=e58]
+        - generic [ref=e59]:
+          - generic [ref=e60]: "Category:"
+          - generic [ref=e61]: Adults
+          - generic [ref=e62]: "Color:"
+          - generic [ref=e63]: Black
+          - generic [ref=e65]: "Size:"
+          - generic [ref=e66]: L
+  - button "Open Next.js Dev Tools" [ref=e25] [cursor=pointer]
+  - alert [ref=e64]

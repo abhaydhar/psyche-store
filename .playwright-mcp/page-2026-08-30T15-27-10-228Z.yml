@@ -1,0 +1,61 @@
+- generic [ref=e1]:
+  - region "Notifications alt+T"
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading [level=1] [ref=e82]: PsycheStore
+      - tablist [ref=e9]:
+        - tab [selected] [ref=e83]: Adults
+        - tab [ref=e84]: Kids
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e68]:
+        - button [ref=e85]: Rotate 15°
+        - generic [ref=e73]: Drag and resize your design within the print area
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - text: Color
+          - generic [ref=e34]:
+            - button [ref=e86]
+            - button [ref=e87]
+            - button [ref=e88]
+          - paragraph [ref=e40]: Black
+        - generic [ref=e41]:
+          - text: Size
+          - generic [ref=e42]:
+            - button [ref=e89]: S
+            - button [ref=e90]: M
+            - button [ref=e91]: L
+            - button [ref=e92]: XL
+            - button [ref=e93]: XXL
+        - generic [ref=e48]:
+          - text: Your Design
+          - generic [ref=e74]:
+            - generic [ref=e79]: test-design.png
+            - button [ref=e80]
+        - button [ref=e94]: Save & Order
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: "Category: Adults"
+          - paragraph [ref=e52]: "Color: Black"
+          - paragraph [ref=e56]: "Size: L"
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]
+  - alert [ref=e25]
+  - dialog [active] [ref=e110]:
+    - generic [ref=e111]:
+      - heading "Your Details" [level=2] [ref=e112]
+      - paragraph [ref=e113]: Enter your contact and delivery information
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - generic [ref=e116]: Full Name
+        - textbox "Full Name" [ref=e120]:
+          - /placeholder: John Doe
+      - generic [ref=e121]:
+        - generic [ref=e122]: Phone Number
+        - textbox "Phone Number" [ref=e125]:
+          - /placeholder: +91 9876543210
+      - generic [ref=e126]:
+        - generic [ref=e127]: Delivery Address
+        - textbox "Delivery Address" [ref=e131]:
+          - /placeholder: Full delivery address
+      - separator [ref=e132]
+      - button "Payment Done - Place Order" [ref=e133]
+    - button "Close" [ref=e107]

@@ -1,0 +1,10 @@
+- generic [active] [ref=f2e1]:
+  - region "Notifications alt+T"
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - heading "PsycheStore" [level=1] [ref=f2e7]
+      - tablist [ref=f2e9]:
+        - tab "Adults" [selected] [ref=f2e10]
+        - tab "Kids" [ref=f2e11]
+  - main [ref=f2e12]
+  - button "Open Next.js Dev Tools" [ref=f2e21] [cursor=pointer]

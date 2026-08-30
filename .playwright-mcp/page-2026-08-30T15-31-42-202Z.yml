@@ -1,0 +1,64 @@
+- generic [active] [ref=f2e1]:
+  - region "Notifications alt+T"
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - heading [level=1] [ref=f2e79]: PsycheStore
+      - tablist [ref=f2e9]:
+        - tab [selected] [ref=f2e80]: Adults
+        - tab [ref=f2e81]: Kids
+  - main [ref=f2e12]:
+    - generic [ref=f2e13]:
+      - generic [ref=f2e65]:
+        - button [ref=f2e82]: Rotate 15°
+        - generic [ref=f2e70]: Drag and resize your design within the print area
+      - generic [ref=f2e31]:
+        - generic [ref=f2e32]:
+          - text: Color
+          - generic [ref=f2e33]:
+            - button [ref=f2e83]
+            - button [ref=f2e84]
+            - button [ref=f2e85]
+          - paragraph [ref=f2e39]: Black
+        - generic [ref=f2e40]:
+          - text: Size
+          - generic [ref=f2e41]:
+            - button [ref=f2e86]: S
+            - button [ref=f2e87]: M
+            - button [ref=f2e88]: L
+            - button [ref=f2e89]: XL
+            - button [ref=f2e90]: XXL
+        - generic [ref=f2e47]:
+          - text: Your Design
+          - generic [ref=f2e71]:
+            - generic [ref=f2e76]: test-design.png
+            - button [ref=f2e77]
+        - button [ref=f2e91]: Save & Order
+        - generic [ref=f2e49]:
+          - paragraph [ref=f2e50]: "Category: Adults"
+          - paragraph [ref=f2e51]: "Color: Black"
+          - paragraph [ref=f2e53]: "Size: L"
+  - button "Open Next.js Dev Tools" [ref=f2e21] [cursor=pointer]
+  - alert [ref=f2e52]
+  - dialog [ref=f2e107]:
+    - generic [ref=f2e108]:
+      - heading "Your Details" [level=2] [ref=f2e109]
+      - paragraph [ref=f2e110]: Enter your contact and delivery information
+    - generic [ref=f2e111]:
+      - generic [ref=f2e112]:
+        - generic [ref=f2e113]: Full Name
+        - textbox "Full Name" [disabled]:
+          - /placeholder: John Doe
+          - text: Webhook Test User
+      - generic [ref=f2e118]:
+        - generic [ref=f2e119]: Phone Number
+        - textbox "Phone Number" [disabled]:
+          - /placeholder: +91 9876543210
+          - text: +91 1234567890
+      - generic [ref=f2e123]:
+        - generic [ref=f2e124]: Delivery Address
+        - textbox "Delivery Address" [disabled] [ref=f2e128]:
+          - /placeholder: Full delivery address
+          - text: 123 Webhook Test Street, Bangalore, India
+      - separator [ref=f2e129]
+      - button "Placing Order..." [disabled]
+    - button "Close" [ref=f2e104]

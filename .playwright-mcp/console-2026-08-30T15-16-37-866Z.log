@@ -1,0 +1,4 @@
+[    4311ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ :0
+[    4311ms] [WARNING] No available adapters. @ https://www.google.com/search?q=Go+to%3A+https%3A%2F%2Fwqxvsddacjynrzkrmzgf.supabase.co%2Fproject%2F_%2Fsql%2Fnew&oq=Go+to%3A+https%3A%2F%2Fwqxvsddacjynrzkrmzgf.supabase.co%2Fproject%2F_%2Fsql%2Fnew&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHODcxajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8&sei=V0mUaq-aE7OVhvcPouy3uAY:0
+[    7492ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://wqxvsddacjynrzkrmzgf.supabase.co/project/_/sql/new:0
+[    7534ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://wqxvsddacjynrzkrmzgf.supabase.co/favicon.ico:0

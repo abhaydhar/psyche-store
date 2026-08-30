@@ -1,0 +1,44 @@
+- generic [active] [ref=e1]:
+  - region "Notifications alt+T"
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "PsycheStore" [level=1] [ref=e7]
+      - tablist [ref=e9]:
+        - tab "Adults" [selected] [ref=e10]
+        - tab "Kids" [ref=e11]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e27]:
+        - generic [ref=e59]:
+          - img "Your design"
+        - generic [ref=e68]:
+          - button "Rotate 15°" [ref=e69]
+          - generic [ref=e73]: Drag and resize your design within the print area
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - text: Color
+          - generic [ref=e34]:
+            - button "Black" [ref=e35]
+            - button "White" [ref=e36]
+            - button "Navy" [ref=e39]
+          - paragraph [ref=e40]: Black
+        - generic [ref=e41]:
+          - text: Size
+          - generic [ref=e42]:
+            - button "S" [ref=e43]
+            - button "M" [ref=e44]
+            - button "L" [ref=e45]
+            - button "XL" [ref=e46]
+            - button "XXL" [ref=e47]
+        - generic [ref=e48]:
+          - text: Your Design
+          - generic [ref=e74]:
+            - generic [ref=e79]: test-design.png
+            - button [ref=e80]
+        - button "Save & Order" [ref=e81]
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: "Category: Adults"
+          - paragraph [ref=e52]: "Color: Black"
+          - paragraph [ref=e56]: "Size: L"
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]
+  - alert [ref=e25]
