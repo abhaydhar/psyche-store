@@ -43,3 +43,4 @@ next-env.d.ts
 .vercel
 .env*
 vercel.json
+.playwright-mcp/console-2026-08-30T16-12-22-890Z.log
