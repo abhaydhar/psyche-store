@@ -49,6 +49,7 @@ export function TshirtCanvas({
     height: PRINT_AREA.height * 0.7,
     rotation: 0,
   });
+  const [sliderSize, setSliderSize] = useState(PRINT_AREA.width * 0.7);
 
   useEffect(() => {
     if (designFile) {
@@ -90,6 +91,11 @@ export function TshirtCanvas({
 
   function handleTextRotate() {
     updateTextTransform({ rotation: (textTransform.rotation + 15) % 360 });
+  }
+
+  function handleSizeChange(newSize: number) {
+    setSliderSize(newSize);
+    updateTransform({ width: newSize, height: newSize });
   }
 
   return (
@@ -184,16 +190,20 @@ export function TshirtCanvas({
                 });
               }}
               className="z-10"
-              style={{ backgroundColor: colorHex }}
             >
               <div
                 className="w-full h-full cursor-move"
-                style={{ transform: `rotate(${transform.rotation}deg)` }}
+                style={{
+                  transform: `rotate(${transform.rotation}deg)`,
+                  backgroundColor: colorHex,
+                  backgroundBlendMode: 'multiply'
+                }}
               >
                 <img
                   src={activeDesignUrl}
                   alt="Your design"
                   className="w-full h-full object-contain pointer-events-none"
+                  style={{ mixBlendMode: 'normal' }}
                   draggable={false}
                 />
               </div>
@@ -245,28 +255,46 @@ export function TshirtCanvas({
       </div>
 
       {(activeDesignUrl || textConfig) && (
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex flex-col gap-2 w-full">
           {activeDesignUrl && (
-            <button
-              onClick={handleRotate}
-              className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded border"
-            >
-              <RotateCw className="w-3 h-3" />
-              Rotate Image
-            </button>
+            <div className="flex items-center gap-2">
+              <label className="text-xs text-muted-foreground whitespace-nowrap">Size:</label>
+              <input
+                type="range"
+                min="50"
+                max={PRINT_AREA.width}
+                value={sliderSize}
+                onChange={(e) => setSliderSize(Number(e.target.value))}
+                onMouseUp={(e) => handleSizeChange(Number((e.target as HTMLInputElement).value))}
+                onTouchEnd={(e) => handleSizeChange(Number((e.target as HTMLInputElement).value))}
+                className="flex-1"
+              />
+              <span className="text-xs text-muted-foreground w-12">{Math.round(sliderSize)}px</span>
+            </div>
           )}
-          {textConfig && (
-            <button
-              onClick={handleTextRotate}
-              className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded border"
-            >
-              <RotateCw className="w-3 h-3" />
-              Rotate Text
-            </button>
-          )}
-          <span className="text-xs text-muted-foreground">
-            Drag elements within the print area
-          </span>
+          <div className="flex items-center gap-2 flex-wrap">
+            {activeDesignUrl && (
+              <button
+                onClick={handleRotate}
+                className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded border"
+              >
+                <RotateCw className="w-3 h-3" />
+                Rotate Image
+              </button>
+            )}
+            {textConfig && (
+              <button
+                onClick={handleTextRotate}
+                className="flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded border"
+              >
+                <RotateCw className="w-3 h-3" />
+                Rotate Text
+              </button>
+            )}
+            <span className="text-xs text-muted-foreground">
+              Drag elements within the print area
+            </span>
+          </div>
         </div>
       )}
     </div>

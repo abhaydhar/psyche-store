@@ -255,7 +255,7 @@ export default function CustomizerPage() {
       <Toaster position="top-center" richColors />
 
       <header className="border-b bg-card shadow-sm px-4 py-4 sticky top-0 z-50 backdrop-blur-sm bg-card/95">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex items-center justify-center">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-primary/10 rounded-lg">
               <Shirt className="w-6 h-6 text-primary" />
@@ -267,16 +267,6 @@ export default function CustomizerPage() {
               <p className="text-xs text-muted-foreground">Custom T-Shirt Studio</p>
             </div>
           </div>
-          <Tabs value={category} onValueChange={handleCategoryChange}>
-            <TabsList className="bg-muted">
-              <TabsTrigger value="Adults" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                Adults
-              </TabsTrigger>
-              <TabsTrigger value="Kids" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
-                Kids
-              </TabsTrigger>
-            </TabsList>
-          </Tabs>
         </div>
       </header>
 
@@ -302,6 +292,17 @@ export default function CustomizerPage() {
             </div>
 
             <div className="space-y-6">
+              <Tabs value={category} onValueChange={handleCategoryChange}>
+                <TabsList className="bg-muted w-full">
+                  <TabsTrigger value="Adults" className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                    Adults
+                  </TabsTrigger>
+                  <TabsTrigger value="Kids" className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                    Kids
+                  </TabsTrigger>
+                </TabsList>
+              </Tabs>
+
               <div className="space-y-2">
                 <h2 className="text-2xl font-bold">Customize Your Design</h2>
                 <p className="text-sm text-muted-foreground">
