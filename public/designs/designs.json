@@ -10,5 +10,11 @@
     "name": "Baby Ganesha",
     "thumbnail": "/designs/fa2.jpg",
     "category": "Spiritual"
+  },
+  {
+    "id": "design-3",
+    "name": "Baby Ganesha",
+    "thumbnail": "/designs/40.png",
+    "category": "Spiritual"
   }
 ]
