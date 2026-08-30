@@ -4,5 +4,11 @@
     "name": "Hand Mudra",
     "thumbnail": "/designs/g1.png",
     "category": "Spiritual"
+  },
+  {
+    "id": "design-2",
+    "name": "Baby Ganesha",
+    "thumbnail": "/designs/fa2.jpg",
+    "category": "Spiritual"
   }
 ]
