@@ -81,3 +81,4 @@ npm run deploy:netlify  # Netlify
 4. Set the same variables on your deployment platform
 
 For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+# Deployment fix applied
