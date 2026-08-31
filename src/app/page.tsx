@@ -24,6 +24,52 @@ async function urlToFile(url: string): Promise<File> {
   return new File([blob], filename, { type: blob.type });
 }
 
+// Helper to compress image files
+async function compressImage(file: File, maxSizeKB: number = 500): Promise<File> {
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        let width = img.width;
+        let height = img.height;
+
+        // Reduce dimensions if image is too large
+        const maxDimension = 1500;
+        if (width > maxDimension || height > maxDimension) {
+          if (width > height) {
+            height = (height / width) * maxDimension;
+            width = maxDimension;
+          } else {
+            width = (width / height) * maxDimension;
+            height = maxDimension;
+          }
+        }
+
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext('2d')!;
+        ctx.drawImage(img, 0, 0, width, height);
+
+        canvas.toBlob(
+          (blob) => {
+            if (blob) {
+              resolve(new File([blob], file.name, { type: 'image/jpeg' }));
+            } else {
+              resolve(file);
+            }
+          },
+          'image/jpeg',
+          0.8
+        );
+      };
+      img.src = e.target?.result as string;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
 export default function CustomizerPage() {
   const [category, setCategory] = useState<Category>("Adults");
   const [products, setProducts] = useState<Product[]>([]);
@@ -122,7 +168,7 @@ export default function CustomizerPage() {
 
       if (activeDesignFile) {
         try {
-          const scale = 2;
+          const scale = 1; // Reduced from 2 to 1 to decrease payload size
           const offscreen = document.createElement("canvas");
           offscreen.width = CANVAS_WIDTH * scale;
           offscreen.height = CANVAS_HEIGHT * scale;
@@ -203,17 +249,20 @@ export default function CustomizerPage() {
           }
 
           mockupBlob = await new Promise<Blob | null>((resolve) =>
-            offscreen.toBlob((blob) => resolve(blob), "image/png")
+            offscreen.toBlob((blob) => resolve(blob), "image/jpeg", 0.85) // Use JPEG with 85% quality for better compression
           );
         } catch (err) {
           console.error("Mockup generation failed:", err);
         }
       }
 
+      // Compress design file before sending
+      const compressedDesign = await compressImage(activeDesignFile!);
+
       const formData = new FormData();
-      formData.append("designFile", activeDesignFile!);
+      formData.append("designFile", compressedDesign);
       if (mockupBlob) {
-        formData.append("mockupBlob", mockupBlob, "mockup.png");
+        formData.append("mockupBlob", mockupBlob, "mockup.jpg");
       }
       formData.append(
         "orderData",
