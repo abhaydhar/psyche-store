@@ -92,6 +92,7 @@ export default function CustomizerPage() {
   });
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [sizeError, setSizeError] = useState(false);
 
   const fetchProducts = useCallback(async () => {
     setLoading(true);
@@ -147,7 +148,15 @@ export default function CustomizerPage() {
       return;
     }
     if (!selectedSize) {
+      setSizeError(true);
       toast.error("Please select a size");
+      // Scroll to size selector smoothly
+      setTimeout(() => {
+        const sizeElement = document.querySelector('[data-size-selector]');
+        if (sizeElement) {
+          sizeElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
       return;
     }
     if (!designFile && !selectedDesignUrl) {
@@ -375,12 +384,16 @@ export default function CustomizerPage() {
 
                     <div className="w-px bg-border self-stretch min-h-[80px]" />
 
-                    <div className="flex-1">
+                    <div className="flex-1" data-size-selector>
                       {selectedProduct && (
                         <SizeSelector
                           sizes={selectedProduct.available_sizes}
                           selectedSize={selectedSize}
-                          onSelect={setSelectedSize}
+                          onSelect={(size) => {
+                            setSelectedSize(size);
+                            setSizeError(false);
+                          }}
+                          error={sizeError}
                         />
                       )}
                     </div>
@@ -421,7 +434,6 @@ export default function CustomizerPage() {
                     className="w-full shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all mt-4"
                     size="lg"
                     onClick={handleSaveAndOrder}
-                    disabled={!selectedProduct || !selectedSize || (!designFile && !selectedDesignUrl)}
                   >
                     <ShoppingBag className="w-4 h-4 mr-2" />
                     Continue to Checkout
