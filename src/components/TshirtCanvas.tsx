@@ -16,8 +16,8 @@ interface TshirtCanvasProps {
   onTextTransformChange?: (transform: TextTransform) => void;
 }
 
-const CANVAS_WIDTH = 400;
-const CANVAS_HEIGHT = 500;
+const CANVAS_WIDTH = 550;
+const CANVAS_HEIGHT = 560;
 const PRINT_AREA = {
   x: CANVAS_WIDTH * 0.2,
   y: CANVAS_HEIGHT * 0.2,
@@ -99,41 +99,43 @@ export function TshirtCanvas({
   }
 
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-start gap-2 w-full">
       <div
         id="tshirt-canvas"
         ref={canvasRef}
-        className="relative border rounded-lg overflow-hidden shadow-sm bg-white"
+        className="relative border rounded-lg overflow-hidden shadow-sm bg-white w-full"
         style={{
-          width: CANVAS_WIDTH,
+          maxWidth: CANVAS_WIDTH,
           height: CANVAS_HEIGHT,
+          padding: '2px 4px 4px 4px',
         }}
       >
         {baseImageUrl ? (
           <>
             {/* Color layer behind the t-shirt image */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-start pt-0 p-1">
               <svg
                 viewBox="0 0 200 250"
-                className="w-[80%] h-[80%]"
+                className="w-full h-full"
                 fill={colorHex}
                 stroke="none"
               >
-                <path d="M60,30 L30,50 L10,90 L40,100 L50,70 L50,190 L150,190 L150,70 L160,100 L190,90 L170,50 L140,30 L120,40 C110,50 90,50 80,40 Z" />
+                <path d="M60,30 Q50,35 30,50 L10,90 Q20,98 40,100 L50,70 L50,190 L150,190 L150,70 L160,100 Q180,98 190,90 L170,50 Q150,35 140,30 Q130,32 120,40 Q110,48 100,50 Q90,48 80,40 Q70,32 60,30 Z" />
               </svg>
             </div>
             <img
               src={baseImageUrl}
               alt={`${colorName} T-Shirt`}
               className="absolute inset-0 w-full h-full object-contain pointer-events-none"
+              style={{ padding: '0 4px 4px 4px' }}
               draggable={false}
             />
           </>
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-start pt-0 p-1">
             <svg
               viewBox="0 0 200 250"
-              className="w-[80%] h-[80%]"
+              className="w-full h-full"
               fill={colorHex}
               stroke={
                 colorHex.toLowerCase() === "#ffffff" ||
@@ -144,23 +146,10 @@ export function TshirtCanvas({
               }
               strokeWidth="2"
             >
-              <path d="M60,30 L30,50 L10,90 L40,100 L50,70 L50,190 L150,190 L150,70 L160,100 L190,90 L170,50 L140,30 L120,40 C110,50 90,50 80,40 Z" />
+              <path d="M60,30 Q50,35 30,50 L10,90 Q20,98 40,100 L50,70 L50,190 L150,190 L150,70 L160,100 Q180,98 190,90 L170,50 Q150,35 140,30 Q130,32 120,40 Q110,48 100,50 Q90,48 80,40 Q70,32 60,30 Z" />
             </svg>
           </div>
         )}
-
-        {/* Printable area boundary */}
-        <div
-          className="absolute pointer-events-none"
-          style={{
-            left: PRINT_AREA.x,
-            top: PRINT_AREA.y,
-            width: PRINT_AREA.width,
-            height: PRINT_AREA.height,
-            border: "2px dashed rgba(128, 128, 128, 0.5)",
-            borderRadius: 4,
-          }}
-        />
 
         {/* Design overlay */}
         {activeDesignUrl && (
