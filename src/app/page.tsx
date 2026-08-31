@@ -270,129 +270,116 @@ export default function CustomizerPage() {
         </div>
       </header>
 
-      <main className="flex-1 max-w-7xl mx-auto w-full p-4 md:p-8">
+      <main className="flex-1 max-w-7xl mx-auto w-full p-4 md:p-6">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20">
             <Loader2 className="w-10 h-10 animate-spin text-primary mb-4" />
             <p className="text-sm text-muted-foreground">Loading products...</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8">
-            <div className="flex justify-center">
-              <TshirtCanvas
-                colorHex={selectedProduct?.color_hex || "#1a1a1a"}
-                colorName={selectedProduct?.color_name || "Black"}
-                baseImageUrl={selectedProduct?.base_image_url || ""}
-                designFile={designFile}
-                designUrl={selectedDesignUrl}
-                onTransformChange={setCanvasTransform}
-                textConfig={textConfig}
-                onTextTransformChange={setTextTransform}
-              />
-            </div>
-
-            <div className="space-y-6">
+          <div className="space-y-4">
+            <div className="flex items-center justify-between gap-4">
+              <div className="space-y-1">
+                <h2 className="text-xl font-bold">Customize Your Design</h2>
+                <p className="text-[13px] text-muted-foreground">
+                  Choose your color, size, and upload your design to create something unique.
+                </p>
+              </div>
               <Tabs value={category} onValueChange={handleCategoryChange}>
-                <TabsList className="bg-muted w-full">
-                  <TabsTrigger value="Adults" className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                <TabsList className="bg-muted">
+                  <TabsTrigger value="Adults" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                     Adults
                   </TabsTrigger>
-                  <TabsTrigger value="Kids" className="flex-1 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                  <TabsTrigger value="Kids" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
                     Kids
                   </TabsTrigger>
                 </TabsList>
               </Tabs>
+            </div>
 
-              <div className="space-y-2">
-                <h2 className="text-2xl font-bold">Customize Your Design</h2>
-                <p className="text-sm text-muted-foreground">
-                  Choose your color, size, and upload your design to create something unique.
-                </p>
-              </div>
-
-              <div className="bg-card rounded-xl border p-6 space-y-5 shadow-sm">
-                <ColorSwatchSelector
-                  products={products}
-                  selectedProductId={selectedProduct?.id || null}
-                  onSelect={handleColorSelect}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+              <div>
+                <TshirtCanvas
+                  colorHex={selectedProduct?.color_hex || "#1a1a1a"}
+                  colorName={selectedProduct?.color_name || "Black"}
+                  baseImageUrl={selectedProduct?.base_image_url || ""}
+                  designFile={designFile}
+                  designUrl={selectedDesignUrl}
+                  onTransformChange={setCanvasTransform}
+                  textConfig={textConfig}
+                  onTextTransformChange={setTextTransform}
                 />
-
-                {selectedProduct && (
-                  <SizeSelector
-                    sizes={selectedProduct.available_sizes}
-                    selectedSize={selectedSize}
-                    onSelect={setSelectedSize}
-                  />
-                )}
-
-                <div className="space-y-4 pt-2">
-                  <div className="flex items-center gap-2">
-                    <div className="h-px bg-border flex-1" />
-                    <span className="text-xs text-muted-foreground font-medium">
-                      ADD YOUR DESIGN
-                    </span>
-                    <div className="h-px bg-border flex-1" />
-                  </div>
-
-                  <DesignCarousel
-                    selectedDesignUrl={selectedDesignUrl}
-                    onSelectDesign={handleTemplateSelect}
-                  />
-
-                  <div className="relative">
-                    <div className="absolute inset-0 flex items-center">
-                      <div className="w-full border-t" />
-                    </div>
-                    <div className="relative flex justify-center text-xs uppercase">
-                      <span className="bg-card px-2 text-muted-foreground">
-                        or
-                      </span>
-                    </div>
-                  </div>
-
-                  <DesignUploader
-                    designFile={designFile}
-                    onUpload={handleDesignUpload}
-                    onRemove={() => setDesignFile(null)}
-                  />
-
-                  {/* TextCustomizer hidden - needs refinement
-                  <TextCustomizer
-                    textConfig={textConfig}
-                    onApply={setTextConfig}
-                    onRemove={() => setTextConfig(null)}
-                  />
-                  */}
-                </div>
               </div>
 
-              <Button
-                className="w-full shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
-                size="lg"
-                onClick={handleSaveAndOrder}
-                disabled={!selectedProduct || !selectedSize || (!designFile && !selectedDesignUrl)}
-              >
-                <ShoppingBag className="w-5 h-5 mr-2" />
-                Continue to Checkout
-              </Button>
+              <div className="space-y-2 flex flex-col">
+                <div className="flex-1 space-y-2">
 
-              {selectedProduct && (
-                <div className="bg-muted/50 rounded-lg p-4 space-y-2">
-                  <h6 className="font-semibold text-sm mb-3">Order Summary</h6>
-                  <div className="grid grid-cols-2 gap-2 text-sm">
-                    <span className="text-muted-foreground">Category:</span>
-                    <span className="font-medium">{category}</span>
-                    <span className="text-muted-foreground">Color:</span>
-                    <span className="font-medium">{selectedProduct.color_name}</span>
-                    {selectedSize && (
-                      <>
-                        <span className="text-muted-foreground">Size:</span>
-                        <span className="font-medium">{selectedSize}</span>
-                      </>
-                    )}
+                <div className="bg-card rounded-xl border p-3 space-y-2 shadow-sm">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-1">
+                      <ColorSwatchSelector
+                        products={products}
+                        selectedProductId={selectedProduct?.id || null}
+                        onSelect={handleColorSelect}
+                      />
+                    </div>
+
+                    <div className="w-px bg-border self-stretch min-h-[80px]" />
+
+                    <div className="flex-1">
+                      {selectedProduct && (
+                        <SizeSelector
+                          sizes={selectedProduct.available_sizes}
+                          selectedSize={selectedSize}
+                          onSelect={setSelectedSize}
+                        />
+                      )}
+                    </div>
                   </div>
+
+                  <div className="space-y-2 pt-1">
+                    <div className="flex items-center gap-2">
+                      <div className="h-px bg-border flex-1" />
+                      <span className="text-[11px] text-muted-foreground font-medium">
+                        ADD YOUR DESIGN
+                      </span>
+                      <div className="h-px bg-border flex-1" />
+                    </div>
+
+                    <DesignCarousel
+                      selectedDesignUrl={selectedDesignUrl}
+                      onSelectDesign={handleTemplateSelect}
+                    />
+
+                    <div className="px-4">
+                      <DesignUploader
+                        designFile={designFile}
+                        onUpload={handleDesignUpload}
+                        onRemove={() => setDesignFile(null)}
+                      />
+                    </div>
+
+                    {/* TextCustomizer hidden - needs refinement
+                    <TextCustomizer
+                      textConfig={textConfig}
+                      onApply={setTextConfig}
+                      onRemove={() => setTextConfig(null)}
+                    />
+                    */}
+                  </div>
+
+                  <Button
+                    className="w-full shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all mt-4"
+                    size="lg"
+                    onClick={handleSaveAndOrder}
+                    disabled={!selectedProduct || !selectedSize || (!designFile && !selectedDesignUrl)}
+                  >
+                    <ShoppingBag className="w-4 h-4 mr-2" />
+                    Continue to Checkout
+                  </Button>
                 </div>
-              )}
+                </div>
+              </div>
             </div>
           </div>
         )}

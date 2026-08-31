@@ -106,9 +106,16 @@ export function CheckoutModal({
               </DialogDescription>
             </DialogHeader>
             <div className="space-y-4">
-              <div className="bg-muted/50 rounded-lg p-2 text-sm">
-                <span className="font-medium">{orderSummary.category}</span>{" "}
-                &bull; {orderSummary.color} &bull; Size {orderSummary.size}
+              <div className="bg-muted/50 rounded-lg p-3 space-y-1.5">
+                <h6 className="font-semibold text-[13px] mb-2">Order Summary</h6>
+                <div className="grid grid-cols-2 gap-1.5 text-[13px]">
+                  <span className="text-muted-foreground">Category:</span>
+                  <span className="font-medium">{orderSummary.category}</span>
+                  <span className="text-muted-foreground">Color:</span>
+                  <span className="font-medium">{orderSummary.color}</span>
+                  <span className="text-muted-foreground">Size:</span>
+                  <span className="font-medium">{orderSummary.size}</span>
+                </div>
               </div>
 
               <div className="flex items-center justify-center p-6 border-2 border-dashed rounded-lg bg-muted/30">
