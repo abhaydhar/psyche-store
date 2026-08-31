@@ -134,7 +134,7 @@ export default function CustomizerPage() {
           ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
           // Draw t-shirt shape filled with the selected color
-          const tshirtPath = new Path2D("M60,30 L30,50 L10,90 L40,100 L50,70 L50,190 L150,190 L150,70 L160,100 L190,90 L170,50 L140,30 L120,40 C110,50 90,50 80,40 Z");
+          const tshirtPath = new Path2D("M84,40 C76,41 68,42 60,46 C47,50 34,54 22,58 C18,62 17,68 19,74 C21,82 23,90 26,98 C31,104 47,110 57,106 L57,214 C57,218 60,220 65,220 L135,220 C140,220 143,218 143,214 L143,106 C153,110 169,104 174,98 C177,90 179,82 181,74 C183,68 182,62 178,58 C166,54 153,50 140,46 C132,42 124,41 116,40 C110,50 108,56 100,56 C92,56 90,50 84,40 Z");
           ctx.save();
           ctx.translate(CANVAS_WIDTH * 0.1, CANVAS_HEIGHT * 0.1);
           ctx.scale(CANVAS_WIDTH * 0.8 / 200, CANVAS_HEIGHT * 0.8 / 250);

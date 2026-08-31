@@ -103,7 +103,7 @@ export function TshirtCanvas({
       <div
         id="tshirt-canvas"
         ref={canvasRef}
-        className="relative border rounded-lg overflow-hidden shadow-sm bg-white w-full"
+        className="relative border rounded-3xl overflow-hidden shadow-md bg-white w-full"
         style={{
           maxWidth: CANVAS_WIDTH,
           height: CANVAS_HEIGHT,
@@ -120,7 +120,8 @@ export function TshirtCanvas({
                 fill={colorHex}
                 stroke="none"
               >
-                <path d="M60,30 Q50,35 30,50 L10,90 Q20,98 40,100 L50,70 L50,190 L150,190 L150,70 L160,100 Q180,98 190,90 L170,50 Q150,35 140,30 Q130,32 120,40 Q110,48 100,50 Q90,48 80,40 Q70,32 60,30 Z" />
+                <path d="M84,40 C76,41 68,42 60,46 C47,50 34,54 22,58 C18,62 17,68 19,74 C21,82 23,90 26,98 C31,104 47,110 57,106 L57,214 C57,218 60,220 65,220 L135,220 C140,220 143,218 143,214 L143,106 C153,110 169,104 174,98 C177,90 179,82 181,74 C183,68 182,62 178,58 C166,54 153,50 140,46 C132,42 124,41 116,40 C110,50 108,56 100,56 C92,56 90,50 84,40 Z" strokeLinejoin="round" />
+                <path d="M88,44 C93,58 107,58 112,44" fill="none" stroke="rgba(120,120,120,0.55)" strokeWidth="3" strokeLinecap="round" />
               </svg>
             </div>
             <img
@@ -146,7 +147,8 @@ export function TshirtCanvas({
               }
               strokeWidth="2"
             >
-              <path d="M60,30 Q50,35 30,50 L10,90 Q20,98 40,100 L50,70 L50,190 L150,190 L150,70 L160,100 Q180,98 190,90 L170,50 Q150,35 140,30 Q130,32 120,40 Q110,48 100,50 Q90,48 80,40 Q70,32 60,30 Z" />
+              <path d="M84,40 C76,41 68,42 60,46 C47,50 34,54 22,58 C18,62 17,68 19,74 C21,82 23,90 26,98 C31,104 47,110 57,106 L57,214 C57,218 60,220 65,220 L135,220 C140,220 143,218 143,214 L143,106 C153,110 169,104 174,98 C177,90 179,82 181,74 C183,68 182,62 178,58 C166,54 153,50 140,46 C132,42 124,41 116,40 C110,50 108,56 100,56 C92,56 90,50 84,40 Z" strokeLinejoin="round" />
+                <path d="M88,44 C93,58 107,58 112,44" fill="none" stroke="rgba(120,120,120,0.55)" strokeWidth="3" strokeLinecap="round" />
             </svg>
           </div>
         )}
